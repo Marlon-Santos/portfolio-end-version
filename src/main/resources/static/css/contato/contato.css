@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Quantico:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "Quantico", sans-serif;
+}
+
+body {
+  height: 100%;
+  background-image: url("../../images/circuittree.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
+
+main > header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main > header > div {
+  display: flex;
+  align-items: flex-start;
+  width: 300px;
+}
+
+main > header > div:nth-child(1) {
+  justify-content: flex-end;
+  margin-top: 200px;
+  margin-right: 80px;
+}
+
+main > header > div:nth-child(2) {
+  justify-content: center;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+main > header > div:nth-child(2) > img {
+  width: 200px;
+}
+
+main > header > div:nth-child(3) {
+  justify-content: flex-start;
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+main > header > div > img {
+  width: 150px;
+}

@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Quantico:400,700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quantico", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    background-image: url("../images/circuit.png");
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+}
+
+header>div {
+    display: flex;
+    justify-content: center;
+}
+
+header>div>input {
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    margin: 10px;
+    margin-left: 245px;
+    margin-top: 25px;
+    background-color: white;
+    border: none;
+    appearance: none;
+    border-radius: 10px;
+    outline: 0;
+}
+
+header>div>input:hover {
+    cursor: pointer;
+}
+
+header>div:first-child {
+    font-size: 30px;
+    text-align: center;
+    margin-left: -40px;
+    margin-top: 25px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+article>div {
+    margin: 10px 62px;
+    margin-bottom: 0px;
+}
+
+article>div:nth-child(2) {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border: 5px solid white;
+    border-radius: 98%;
+    overflow: hidden;
+    background-image: url("../images/circle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+}
+
+article>div>img {
+    width: 100%;
+}
+
+article>div:first-child {
+    width: 29%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: black;
+}
+
+article>div:first-child>div {
+    margin-top: auto;
+    position: relative;
+    color: white;
+}
+
+article>div:nth-child(3) {
+    width: 29%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    padding: 5px;
+    margin-top: 100px;
+    overflow: auto;
+    background-color: black;
+}
+
+article>div:nth-child(3)>div {
+    margin-top: auto;
+    position: relative;
+    color: white;
+}
+
+@media only screen and (max-width: 1236px) {
+    article>div:nth-child(3) {
+        height: 190px;
+        overflow: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    article>div:nth-child(1) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 941px) {
+    article>div:nth-child(3) {
+        position: absolute;
+        margin-top: 500px;
+        left: 50px;
+        height: auto;
+        width: 40%;
+    }
+    article>div:nth-child(1) {
+        position: absolute;
+        margin-top: 500px;
+        right: 50px;
+        height: auto;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    article>div:nth-child(1) {
+        position: absolute;
+        margin-top: 470px;
+        right: 0;
+        height: auto;
+        width: 80%;
+        margin-bottom: 20px;
+        border-right: 0;
+    }
+    #text3 {
+        left: 0;
+        border-left: 0;
+    }
+    article>div:nth-child(3) {
+        position: absolute;
+        margin-top: 780px;
+        margin-bottom: 10px;
+        left: 0;
+        height: auto;
+        width: 80%;
+        border-left: 0;
+    }
+}
+
+@media only screen and (max-width: 611px) {
+    article>div:nth-child(1) {}
+    #text3 {
+        width: 60%;
+    }
+    article>div:nth-child(3) {
+        margin-top: 800px;
+    }
+}
+
+@media only screen and (max-width: 578px) {
+    article>div:nth-child(1) {
+        width: 95%;
+    }
+    #text3 {
+        width: 60%;
+    }
+    article>div:nth-child(3) {
+        width: 95%;
+        margin-top: 780px;
+    }
+}
+
+@media only screen and (max-width: 514px) {
+    header>div:first-child {
+        margin-left: 0;
+    }
+    article>div:nth-child(1) {}
+    #text3 {}
+    article>div:nth-child(3) {}
+}
+
+@media only screen and (max-width: 482px) {
+    header>div:first-child {
+        margin-left: 0;
+    }
+    article>div:nth-child(1) {}
+    #text3 {}
+    article>div:nth-child(3) {
+        margin-top: 850px;
+    }
+}
+
+footer>div:last-child {
+    position: absolute;
+    left: 44%;
+    margin-top: 70px;
+    width: 40%;
+    height: 120px;
+    display: flex;
+    border: 5px solid white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+footer>div:last-child>div {
+    color: white;
+}
+
+footer>div:last-child>a {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>HELLO</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content="marlon-santos" />
+    <link rel="icon" href="/image/favicon.png" />
+    <link href="/css/style.css" rel="stylesheet" />
+</head>
+
+<body id="home">
+    <main>
+        <header>
+            <div id="default">
+                <div id="myportfolio">Portfolio</div>
+                <input id="turnon" type="button" value="Ligar" />
+            </div>
+        </header>
+        <article>
+            <div id="text1">
+                <div>
+                    Cursando atualmente Análise e Desenvolvimento de Sistemas e focando em desenvolvimento front-end. Aprendendo a fundo a linguagem Javascript, para tirar aproveito do que há de melhor nas novas tecnologias, como React.js, stack muito poderosa na qual estou
+                    evoluindo atualmente e desenvolvendo SPA completas, conhecimento sólido em Html5 e Css3. Apesar de atualmente estar estudando front-end com ReactJs, gosto de sempre aprender tecnologias novas e me manter sempre atualizado, futuramente
+                    pretendo aprender TypeScript e Angular e melhorar minhas habilidades no back-end com Node.js e banco de dados com MongoDB.
+                </div>
+            </div>
+            <div id="profile">
+                <img th:src="@{/images/profile.jpg}" />
+            </div>
+            <div id="text2">
+                <div>
+                    Buscando colocar minhas habilidades em práticas em projetos reais, construindo muitos projetos open source e projetos privados, aprendendo e utilizando as Stack MERN( Mongo , Express, React.js, Node.js) em meus projetos, buscando conhecer sempre novas
+                    tecnologias.
+                </div>
+            </div>
+        </article>
+        <footer>
+            <div id="text3">
+                <a href="projeto">Projetos</a>
+                <a href="skills">Skills</a>
+                <a href="contato">Contato</a>
+            </div>
+        </footer>
+    </main>
+    <script>
+        //==============================================
+        let id = document.querySelector("#home");
+        let input = document.querySelector("#turnon");
+        let profile = document.querySelector("#profile");
+        let myPortfolio = document.querySelector("#myportfolio");
+        let divTextOne = document.querySelector("#text1");
+        let textOne = document.querySelector("#text1 > div");
+        let divTextTwo = document.querySelector("#text2");
+        let textTwo = document.querySelector("#text2 > div");
+        let divTextThree = document.querySelector("#text3");
+        let textThree = document.querySelectorAll("#text3 > a");
+        let turnOn = false;
+        input.addEventListener("click", e => {
+            if (turnOn) {
+                console.log(e.currentTarget);
+                id.style.backgroundColor = "black";
+                input.value = "Ligar";
+                input.style.backgroundColor = "white";
+                input.style.color = "black";
+                profile.style.borderColor = "white";
+                myportfolio.style.color = "white";
+                myportfolio.style.color = "white";
+                divTextOne.style.borderColor = "white";
+                divTextOne.style.backgroundColor = "black";
+                divTextTwo.style.borderColor = "white";
+                divTextTwo.style.backgroundColor = "black";
+                divTextThree.style.borderColor = "white";
+                divTextThree.style.backgroundColor = "black";
+                textOne.style.color = "white";
+                textTwo.style.color = "white";
+                textThree.forEach(item => (item.style.color = "white"));
+                turnOn = !turnOn;
+            } else {
+                id.style.backgroundColor = "white";
+                input.value = "Desligar";
+                input.style.backgroundColor = "black";
+                input.style.color = "white";
+                profile.style.borderColor = "black";
+                myportfolio.style.color = "black";
+                divTextOne.style.borderColor = "black";
+                divTextOne.style.backgroundColor = "white";
+                divTextTwo.style.borderColor = "black";
+                divTextTwo.style.backgroundColor = "white";
+                divTextThree.style.borderColor = "black";
+                divTextThree.style.backgroundColor = "white";
+                textOne.style.color = "black";
+                textTwo.style.color = "black";
+                textThree.forEach(item => (item.style.color = "black"));
+                turnOn = !turnOn;
+            }
+        });
+        //===============================================
+    </script>
+</body>
+
+</html>
